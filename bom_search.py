@@ -43,21 +43,3 @@ if __name__=='__main__':
         except:
             with open('error.txt','a') as f:
                 f.write(a)
-
-    #fil.openxls(files,'UK-30R-0005.xls')
-'''
-#d=v[v[1].str.contains(u'罩').astype(bool)]
-    for a in ar:
-        t=multiprocessing.Process(target=fil.openxls,args=(a,))
-        th.append(t)
-    for thread in th:
-        thread.start()
-    for thread in th:
-        thread.join()
-
-import os
-import pandas as pd
-df=pd.DataFrame({'one':[u'我的',u'中国',1,12,13,24,5,6],'two':[u'安徽',7,8,9,10,11,12,13]},index=None)
-#print df
-d=df['one'].str.contains(u'的')  #模糊匹配
-'''
